@@ -19,7 +19,12 @@
 <body>
     <header class="navbar-container">
         <div class="logo">
-            <img src="assets/images/logorsud.png" alt="logo rsud serang">
+            <h1 class="site-title">
+                <a href="/" aria-label="Homepage RSUD Kota Serang">
+                    <img src="assets/images/logorsud.png" alt="logo rsud serang">
+                    <span class="visually-hidden">RSUD Kota Serang</span>
+                </a>
+            </h1>
         </div>
         <nav class="nav-list">
             <ul>
@@ -30,14 +35,14 @@
         </nav>
     </header>
     <main>
-        <div class="jumbotron">
+        <section class="jumbotron">
             <div class="jumbotron-description">
                 <h1 class="jumbotron-title">RSUD Kota Serang</h1>
                 <p>
                     <span class="rsudteks">RSUD Kota Serang</span> berdiri sebagai wujud komitmen Pemerintah Kota Serang
                     dalam meningkatkan derajat kesehatan masyarakat.
                     Rumah sakit tipe C ini menjadi pusat rujukan berbagai fasilitas kesehatan tingkat pertama, seperti
-                    puskesmas dan klinik, di wilayah Kota Serang.
+                    puskesmas dan klinik di wilayah Kota Serang.
                 </p>
                 <p><i><q>Bekerjalah Seperti Yang Seharusnya, Bukan Bekerja Yang Seperti Biasanya</q></i></p>
                 <a href="https://maps.app.goo.gl/eFwAVNLjckzentZMA"><button><i class="fa-solid fa-location-dot"></i>
@@ -46,7 +51,7 @@
             <div class="jumbotron-image">
                 <img src="assets/images/logoserang.png" alt="Logo Serang">
             </div>
-        </div>
+        </section>
         <aside>
             <div class="social-media">
                 <ul>
@@ -63,7 +68,7 @@
             <div class="content">
                 <article id="visimisi" class="card">
                     <h2>Visi dan Misi</h2>
-                    <img class="featured-img" src="assets/images/frontlobbyrsud.jpg" alt="lobby rsud">
+                    <img class="featured-img" src="assets/images/frontlobbyrsud.jpg" alt="lobby rsud" loading="lazy">
                     <section>
                         <h3>Visi</h3>
                         <p><i><q>Terwujudnya Rumah Sakit Yang Diminati Karena Pelayanan Yang Mumpuni</q></i></p>
@@ -81,7 +86,7 @@
                 </article>
                 <article id="fasilitas" class="card">
                     <h2>Fasilitas</h2>
-                    <img class="featured-img" src="assets/images/sidelobbyrsud.jpg" alt="fasilitas rsud">
+                    <img class="featured-img" src="assets/images/sidelobbyrsud.jpg" alt="fasilitas rsud" loading="lazy">
                     <p>Tersedia layanan rawat jalan, rawat inap, medical checkup, dan fasilitas rujukan. </p>
                     <p>Beberapa layanan
                         spesialis yang
@@ -98,10 +103,7 @@
                     <header>
                         <h2>Profil Fasyankes</h2>
                         <figure>
-                            <img class="profile-img" src="assets/images/logorsud.png" alt="logo rsud serang">
-                            <figcaption><a href="https://sirs.kemkes.go.id/fo/home/profile_rs/3673012" target="_blank">
-                                    Sumber Data
-                                    Kemenkes</a></figcaption>
+                            <img class="profile-img" src="assets/images/kemenkes.png" alt="logo rsud serang">
                         </figure>
                         <section>
                             <table>
@@ -136,47 +138,23 @@
             </aside>
         </div>
         <div id="myModal" class="modal">
-
             <!-- Modal content -->
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSerYgIshzW3bqHeW6lysh_9dqOlw6568fMXfM38AZm3RmAeUg/viewform?embedded=true"
-                    width="640" height="1342" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSerYgIshzW3bqHeW6lysh_9dqOlw6568fMXfM38AZm3RmAeUg/viewform?embedded=true"
+                        width="640" height="1342" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
             </div>
-
         </div>
     </main>
     <footer>
         <p>&copy; 2025, D. A. Majid</p>
     </footer>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>

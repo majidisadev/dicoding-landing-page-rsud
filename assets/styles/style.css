@@ -13,6 +13,7 @@ body {
   padding: 0;
 }
 
+/* header */
 header.navbar-container {
   align-items: center;
   background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
@@ -20,7 +21,6 @@ header.navbar-container {
   display: flex;
   justify-content: space-evenly;
   margin-inline: auto;
-  padding-block: 1rem;
   position: sticky;
   top: 0;
   width: 100%;
@@ -57,10 +57,20 @@ header.navbar-container .nav-list li:hover a {
   color: white;
 }
 
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
 main {
   width: 100%;
 }
 
+/* jumbotron */
 main .jumbotron {
   align-items: center;
   background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
@@ -72,6 +82,7 @@ main .jumbotron {
   margin-inline: auto;
   padding: 6rem 12rem;
   font-size: 20px;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -80,7 +91,7 @@ main .jumbotron .jumbotron-description {
 }
 
 main .jumbotron .jumbotron-description .jumbotron-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-block: 1rem;
 }
 
@@ -115,10 +126,11 @@ main .jumbotron .jumbotron-image {
 
 main .jumbotron .jumbotron-image img {
   margin: auto;
-  min-width: 100px;
+  min-width: 50px;
   width: 200px;
 }
 
+/* social media */
 main aside .social-media {
   display: flex;
   height: 100%;
@@ -148,13 +160,14 @@ main aside .social-media li a {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
-  transition: all 0.1 ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 main aside .social-media li a:hover {
   color: #ddd;
 }
 
+/* main content */
 .content {
   display: flex;
   flex: 2;
@@ -208,6 +221,7 @@ h3 {
   width: 250px;
 }
 
+/* footer */
 footer {
   background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
   background-color: white;
@@ -239,15 +253,24 @@ footer {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -282,14 +305,19 @@ footer {
   }
 
   main .jumbotron .jumbotron-description title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   main .jumbotron .jumbotron-description p {
     font-size: 1rem;
   }
+
   main .jumbotron .jumbotron-image {
     order: -1;
+  }
+
+  main .jumbotron .jumbotron-image img {
+    width: 150px;
   }
   main aside .social-media {
     display: none;
