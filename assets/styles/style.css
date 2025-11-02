@@ -1,0 +1,300 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar-container {
+  align-items: center;
+  background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline: auto;
+  padding-block: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 250px;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  gap: 2rem 1rem;
+  justify-content: center;
+  padding-left: 0;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  border-radius: 999px;
+  color: darkslategray;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: darkslategray;
+  color: white;
+}
+
+main {
+  width: 100%;
+}
+
+main .jumbotron {
+  align-items: center;
+  background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
+  background-color: white;
+  color: darkslategray;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-inline: auto;
+  padding: 6rem 12rem;
+  font-size: 20px;
+  width: 100%;
+}
+
+main .jumbotron .jumbotron-description {
+  flex: 2 1;
+}
+
+main .jumbotron .jumbotron-description .jumbotron-title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .jumbotron .jumbotron-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .jumbotron .jumbotron-description button {
+  background-color: darkslategray;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-block-start: 1rem;
+  padding: 0.8rem 2.5rem;
+  transition: all 0.15s ease-in;
+}
+
+main .jumbotron .jumbotron-description button:hover {
+  background-color: transparent;
+  border: 3px solid darkslategray;
+  color: darkslategray;
+}
+
+main .jumbotron .jumbotron-image {
+  display: flex;
+  flex: 1;
+}
+
+main .jumbotron .jumbotron-image img {
+  margin: auto;
+  min-width: 100px;
+  width: 200px;
+}
+
+main aside .social-media {
+  display: flex;
+  height: 100%;
+  inset-block: 0;
+  inset-inline-end: 0;
+  position: fixed;
+}
+
+main aside .social-media ul {
+  align-items: center;
+  background-color: darkslategray;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: auto;
+  padding: 1.5rem 1rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.1 ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #ddd;
+}
+
+.content {
+  display: flex;
+  flex: 2;
+  flex-flow: column wrap;
+  gap: 1rem 2rem;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+}
+
+h2,
+h3 {
+  color: darkslategray;
+}
+
+.rsudteks {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+.featured-img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #f4f6f8;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 #eee;
+  padding: 20px;
+}
+
+.flex-content {
+  display: flex;
+}
+
+.flex-content aside .profile {
+  flex: 1;
+}
+
+.flex-content aside .profile header {
+  text-align: center;
+}
+
+.flex-content aside .profile header table {
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 250px;
+}
+
+footer {
+  background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));
+  background-color: white;
+  color: darkslategray;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f4f6d8;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-content {
+    flex-flow: column nowrap;
+  }
+
+  .flex-content aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  main .jumbotron {
+    flex-direction: column;
+  }
+
+  main .jumbotron .jumbotron-description title {
+    font-size: 2rem;
+  }
+
+  main .jumbotron .jumbotron-description p {
+    font-size: 1rem;
+  }
+  main .jumbotron .jumbotron-image {
+    order: -1;
+  }
+  main aside .social-media {
+    display: none;
+  }
+  .flex-content aside {
+    align-self: stretch;
+  }
+}
